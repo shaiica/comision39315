@@ -1,0 +1,59 @@
+@media(min-width:1024px){
+    .header{
+        width: 100%;
+        height: 100%;
+    }
+    .cuotas{
+        font-size: 20px;
+    }
+    .mainind{
+        width: 100%;
+        .text-h1{
+            font-size: 30px;
+        }
+    }
+    .tarjeta{
+        
+        @include grid(repeat(1.1fr)/repeat(3.1fr),center,none);
+    grid-template-areas:
+    "vlack simbra brabo"
+    
+    ;
+    .vlack{
+        img{
+            width: 15rem;
+            align-items: center;
+        }
+        text-align: center;
+        .texto-main{
+            font-size: 20px;
+        }
+    }
+    .simbra{
+        img{
+            width: 15rem;
+            align-items: center;
+        }
+        text-align: center;
+        .texto-main{
+            font-size: 20px;
+        }
+    }
+    .brabo{
+        img{
+            width: 15rem;
+            align-items: center;
+        }
+        text-align: center;
+        .texto-main{
+            font-size: 20px;
+        }
+    }
+    }
+    .footer-edit{
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+    }
+
+}

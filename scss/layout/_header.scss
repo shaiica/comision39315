@@ -1,0 +1,37 @@
+.fondo{
+    background-color: lavender;
+}
+
+.cuotas{
+    background-color: rgb(134, 192, 243);
+    text-align: center;
+}
+
+.logo{
+    li{
+        list-style: none;
+    }
+    img{
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+.top{
+    @include grid(repeat(1.1fr)/repeat(3.1fr),center, space-between);
+    grid-template-areas:
+    "foto back carri"
+    ;
+    li{
+        list-style: none;
+    
+    }
+    img{
+        border-radius: 20px;
+        padding: 5px;
+    }
+    .back li a{
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,46 @@
+.text-sale{
+    text-align: center;
+}
+
+.text-sale::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.text-sale:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.text-sale::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(15, 89%, 58%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.text-sale{
+    position: relative;
+    font-size: 2rem;
+}
+
+.sale{
+    @include grid(repeat(2.1fr)/repeat(3.1fr),center, space-around);
+    grid-template-areas:
+    "campera termica calza"
+    "botines canillerasimbra medias"
+    ;
+    .texto-main{
+        text-align: center;
+        font-size: 20px;
+    }
+    img{
+        border-radius: 20px;
+        padding: 10px;
+    }
+    margin: 30px;
+}

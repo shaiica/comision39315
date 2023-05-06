@@ -1,0 +1,6 @@
+.footer-edit{
+    background-color: #FDF7FF;
+    @include grid(repeat(1.1fr)/repeat(2.1fr), center, space-around);
+    grid-template-areas:
+    "item1 item2 item3";
+}

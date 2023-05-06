@@ -1,0 +1,1839 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondo {
+  background-color: lavender;
+}
+
+.cuotas {
+  background-color: rgb(134, 192, 243);
+  text-align: center;
+}
+
+.logo li {
+  list-style: none;
+}
+.logo img {
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.top {
+  display: grid;
+  grid-template: repeat(1.1fr)/repeat(3.1fr);
+  align-items: center;
+  justify-content: space-between;
+  grid-template-areas: "foto back carri";
+}
+.top li {
+  list-style: none;
+}
+.top img {
+  border-radius: 20px;
+  padding: 5px;
+}
+.top .back li a {
+  text-decoration: none;
+  color: black;
+}
+
+.text-h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+h1::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200, 100%, 80%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 5rem;
+}
+
+.tarjeta {
+  display: grid;
+  grid-template: repeat(1.1fr)/repeat(3.1fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "vlack simbra brabo";
+  margin: 30px;
+}
+.tarjeta .texto-main {
+  text-align: center;
+  font-size: 20px;
+}
+.tarjeta img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.text-acc {
+  text-align: center;
+}
+
+.text-acc::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.text-acc:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-acc::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(277, 87%, 67%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.text-acc {
+  position: relative;
+  font-size: 2rem;
+}
+
+.accesorios {
+  display: grid;
+  grid-template: repeat(2.1fr)/repeat(2.1fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "guante mascara" "gryphon grip";
+  margin: 30px;
+}
+.accesorios .texto-main {
+  text-align: center;
+  font-size: 20px;
+}
+.accesorios img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+div .opciones {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  align-items: none;
+  justify-content: none;
+  gap: 10px;
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+}
+
+.indu {
+  display: grid;
+  grid-template: repeat(1.1fr)/repeat(2.1fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "pollera remera";
+  margin: 30px;
+}
+.indu .texto-main {
+  text-align: center;
+  font-size: 20px;
+}
+.indu img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.text-indu {
+  text-align: center;
+}
+
+.text-indu::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.text-indu:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-indu::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(139, 100%, 80%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.text-indu {
+  position: relative;
+  font-size: 2rem;
+}
+
+.text-equipo {
+  text-align: center;
+}
+
+.text-equipo::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.text-equipo:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-equipo::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(241, 85%, 65%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.text-equipo {
+  position: relative;
+  font-size: 2rem;
+}
+
+.equipo {
+  display: grid;
+  grid-template: repeat(1.1fr)/repeat(2.1fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "camiseta2023 camiseta2014";
+  margin: 30px;
+}
+.equipo .texto-main {
+  text-align: center;
+  font-size: 20px;
+}
+.equipo img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+div .opciones {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(4, 1fr);
+  align-items: none;
+  justify-content: space-around;
+  grid-template-areas: ". precios . marcas";
+  gap: 10px;
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.text-palos {
+  text-align: center;
+}
+
+.text-palos::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.text-palos:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-palos::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(323, 90%, 65%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.text-palos {
+  position: relative;
+  font-size: 2rem;
+}
+
+.palos {
+  display: grid;
+  grid-template: repeat(1.1fr)/repeat(2.1fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "palonegro paloblanco";
+  margin: 30px;
+}
+.palos .texto-main {
+  text-align: center;
+  font-size: 20px;
+}
+.palos img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.text-bolsos {
+  text-align: center;
+}
+
+.text-bolsos::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.text-bolsos:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-bolsos::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(83, 90%, 65%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.text-bolsos {
+  position: relative;
+  font-size: 2rem;
+}
+
+.bolsos {
+  display: grid;
+  grid-template: repeat(1.1fr)/repeat(2.1fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "bolsoadidas bolsosimbra";
+  margin: 30px;
+}
+.bolsos .texto-main {
+  text-align: center;
+  font-size: 20px;
+}
+.bolsos img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.text-sale {
+  text-align: center;
+}
+
+.text-sale::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.text-sale:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-sale::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(15, 89%, 58%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.text-sale {
+  position: relative;
+  font-size: 2rem;
+}
+
+.sale {
+  display: grid;
+  grid-template: repeat(2.1fr)/repeat(3.1fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "campera termica calza" "botines canillerasimbra medias";
+  margin: 30px;
+}
+.sale .texto-main {
+  text-align: center;
+  font-size: 20px;
+}
+.sale img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+@media (min-width: 320px) {
+  .header {
+    width: 100%;
+    height: 100%;
+  }
+  .cuotas {
+    font-size: 10px;
+  }
+  .mainind {
+    width: 100%;
+  }
+  .mainind .text-h1 {
+    font-size: 15px;
+  }
+  .tarjeta {
+    display: grid;
+    grid-template: repeat(3.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "vlack" "simbra" "brabo";
+  }
+  .tarjeta .vlack {
+    text-align: center;
+  }
+  .tarjeta .vlack img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .vlack .texto-main {
+    font-size: 16px;
+  }
+  .tarjeta .simbra {
+    text-align: center;
+  }
+  .tarjeta .simbra img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .simbra .texto-main {
+    font-size: 16px;
+  }
+  .tarjeta .brabo {
+    text-align: center;
+  }
+  .tarjeta .brabo img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .brabo .texto-main {
+    font-size: 16px;
+  }
+  .footer-edit {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  div .opciones {
+    font-size: 15px;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    align-items: none;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .top {
+    width: 100%;
+    font-size: 13px;
+  }
+  .top .carri {
+    display: none;
+  }
+  .text-acc {
+    font-size: 20px;
+    text-align: center;
+  }
+  .accesorios {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(4.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "gaunte" "mascara" "gryphon" "grip";
+  }
+  .accesorios .guante img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .accesorios .guante .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .accesorios .mascara img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .accesorios .mascara .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .accesorios .gryphon img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .accesorios .gryphon .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .accesorios .grip img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .accesorios .grip .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .footer-acc .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-palos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .palos {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "palonegro" "paloblanco";
+  }
+  .palos .palonegro img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .palos .palonegro .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .palos .paloblanco img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .palos .paloblanco .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .text-bolsos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .bolsos {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "bolsoadidas" "bolsosimbra";
+  }
+  .bolsos .bolsoadidas img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .bolsos .bolsoadidas .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .bolsos .bolsosimbra img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .bolsos .bolsosimbra .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .footer-palo .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-indu {
+    font-size: 20px;
+    text-align: center;
+  }
+  .indu {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "pollera" "remera";
+  }
+  .indu .pollera img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .indu .pollera .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .indu .remera img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .indu .remera .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .text-equipo {
+    font-size: 20px;
+    text-align: center;
+  }
+  .equipo {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "camiseta2023" "camiseta2014";
+  }
+  .equipo .camiseta2023 img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .equipo .camiseta2023 .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .equipo .camiseta2014 img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .equipo .camiseta2014 .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .footer-ind .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-sale {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sale {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(6.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "campera" "termica" "calza" "botines" "canillerasimbra" "medias";
+  }
+  .sale .campera img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .sale .campera .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .sale .termica img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .sale .termica .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .sale .calza img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .sale .calza .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .sale .botines img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .sale .botines .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .sale .canillerasimbra img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .sale .canillerasimbra .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+  .sale .medias img {
+    width: 10rem;
+    margin-left: 30%;
+  }
+  .sale .medias .texto-main {
+    font-size: 16px;
+    margin-left: 55%;
+  }
+}
+@media (min-width: 375px) {
+  .header {
+    width: 100%;
+    height: 100%;
+  }
+  .cuotas {
+    font-size: 10px;
+  }
+  .mainind {
+    width: 100%;
+  }
+  .mainind .text-h1 {
+    font-size: 15px;
+  }
+  .tarjeta {
+    display: grid;
+    grid-template: repeat(3.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "vlack" "simbra" "brabo";
+  }
+  .tarjeta .vlack {
+    text-align: center;
+  }
+  .tarjeta .vlack img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .vlack .texto-main {
+    font-size: 16px;
+  }
+  .tarjeta .simbra {
+    text-align: center;
+  }
+  .tarjeta .simbra img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .simbra .texto-main {
+    font-size: 16px;
+  }
+  .tarjeta .brabo {
+    text-align: center;
+  }
+  .tarjeta .brabo img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .brabo .texto-main {
+    font-size: 16px;
+  }
+  .footer-edit {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  div .opciones {
+    font-size: 15px;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    align-items: none;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .top {
+    width: 100%;
+    font-size: 13px;
+  }
+  .top .carri {
+    display: none;
+  }
+  .text-acc {
+    font-size: 20px;
+    text-align: center;
+  }
+  .accesorios {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(4.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "gaunte" "mascara" "gryphon" "grip";
+  }
+  .accesorios .guante img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .accesorios .guante .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .accesorios .mascara img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .accesorios .mascara .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .accesorios .gryphon img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .accesorios .gryphon .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .accesorios .grip img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .accesorios .grip .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .footer-acc .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-palos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .palos {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "palonegro" "paloblanco";
+  }
+  .palos .palonegro img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .palos .palonegro .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .palos .paloblanco img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .palos .paloblanco .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .text-bolsos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .bolsos {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "bolsoadidas" "bolsosimbra";
+  }
+  .bolsos .bolsoadidas img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .bolsos .bolsoadidas .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .bolsos .bolsosimbra img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .bolsos .bolsosimbra .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .footer-palo .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-indu {
+    font-size: 20px;
+    text-align: center;
+  }
+  .indu {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "pollera" "remera";
+  }
+  .indu .pollera img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .indu .pollera .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .indu .remera img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .indu .remera .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .text-equipo {
+    font-size: 20px;
+    text-align: center;
+  }
+  .equipo {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "camiseta2023" "camiseta2014";
+  }
+  .equipo .camiseta2023 img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .equipo .camiseta2023 .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .equipo .camiseta2014 img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .equipo .camiseta2014 .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .footer-ind .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-sale {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sale {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(6.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "campera" "termica" "calza" "botines" "canillerasimbra" "medias";
+  }
+  .sale .campera img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .sale .campera .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .sale .termica img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .sale .termica .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .sale .calza img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .sale .calza .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .sale .botines img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .sale .botines .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .sale .canillerasimbra img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .sale .canillerasimbra .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+  .sale .medias img {
+    width: 10rem;
+    margin-left: 50%;
+  }
+  .sale .medias .texto-main {
+    font-size: 16px;
+    margin-left: 80%;
+  }
+}
+@media (min-width: 425px) {
+  .header {
+    width: 100%;
+    height: 100%;
+  }
+  .cuotas {
+    font-size: 10px;
+  }
+  .mainind {
+    width: 100%;
+  }
+  .mainind .text-h1 {
+    font-size: 15px;
+  }
+  .tarjeta {
+    display: grid;
+    grid-template: repeat(3.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "vlack" "simbra" "brabo";
+  }
+  .tarjeta .vlack {
+    text-align: center;
+  }
+  .tarjeta .vlack img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .vlack .texto-main {
+    font-size: 16px;
+  }
+  .tarjeta .simbra {
+    text-align: center;
+  }
+  .tarjeta .simbra img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .simbra .texto-main {
+    font-size: 16px;
+  }
+  .tarjeta .brabo {
+    text-align: center;
+  }
+  .tarjeta .brabo img {
+    width: 10rem;
+    align-items: center;
+  }
+  .tarjeta .brabo .texto-main {
+    font-size: 16px;
+  }
+  .footer-edit {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  div .opciones {
+    font-size: 15px;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    align-items: none;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .top {
+    width: 100%;
+    font-size: 13px;
+  }
+  .top .carri {
+    display: none;
+  }
+  .text-acc {
+    font-size: 20px;
+    text-align: center;
+  }
+  .accesorios {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(4.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "gaunte" "mascara" "gryphon" "grip";
+  }
+  .accesorios .guante img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .accesorios .guante .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .accesorios .mascara img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .accesorios .mascara .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .accesorios .gryphon img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .accesorios .gryphon .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .accesorios .grip img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .accesorios .grip .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .footer-acc .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-palos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .palos {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "palonegro" "paloblanco";
+  }
+  .palos .palonegro img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .palos .palonegro .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .palos .paloblanco img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .palos .paloblanco .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .text-bolsos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .bolsos {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "bolsoadidas" "bolsosimbra";
+  }
+  .bolsos .bolsoadidas img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .bolsos .bolsoadidas .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .bolsos .bolsosimbra img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .bolsos .bolsosimbra .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .footer-palo .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-indu {
+    font-size: 20px;
+    text-align: center;
+  }
+  .indu {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "pollera" "remera";
+  }
+  .indu .pollera img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .indu .pollera .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .indu .remera img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .indu .remera .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .text-equipo {
+    font-size: 20px;
+    text-align: center;
+  }
+  .equipo {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "camiseta2023" "camiseta2014";
+  }
+  .equipo .camiseta2023 img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .equipo .camiseta2023 .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .equipo .camiseta2014 img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .equipo .camiseta2014 .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .footer-ind .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-sale {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sale {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(6.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "campera" "termica" "calza" "botines" "canillerasimbra" "medias";
+  }
+  .sale .campera img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .campera .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .termica img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .termica .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .calza img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .calza .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .botines img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .botines .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .canillerasimbra img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .canillerasimbra .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .medias img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .medias .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    width: 100%;
+    height: 100%;
+  }
+  .cuotas {
+    font-size: 10px;
+  }
+  .mainind {
+    width: 100%;
+  }
+  .mainind .text-h1 {
+    font-size: 20px;
+  }
+  .tarjeta {
+    display: grid;
+    grid-template: repeat(3.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "vlack" "simbra" "brabo";
+  }
+  .tarjeta .vlack {
+    text-align: center;
+  }
+  .tarjeta .vlack img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .vlack .texto-main {
+    font-size: 20px;
+  }
+  .tarjeta .simbra {
+    text-align: center;
+  }
+  .tarjeta .simbra img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .simbra .texto-main {
+    font-size: 20px;
+  }
+  .tarjeta .brabo {
+    text-align: center;
+  }
+  .tarjeta .brabo img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .brabo .texto-main {
+    font-size: 20px;
+  }
+  .footer-edit {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  div .opciones {
+    font-size: 15px;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    align-items: none;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .top {
+    width: 100%;
+    font-size: 13px;
+  }
+  .top .carri {
+    display: none;
+  }
+  .text-acc {
+    font-size: 20px;
+    text-align: center;
+  }
+  .accesorios {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(2.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "gaunte mascara" "gryphon grip";
+  }
+  .accesorios .guante img {
+    width: 15rem;
+    margin-left: 65%;
+  }
+  .accesorios .guante .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .accesorios .mascara img {
+    width: 15rem;
+    margin-left: 65%;
+  }
+  .accesorios .mascara .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .accesorios .gryphon img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .accesorios .gryphon .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .accesorios .grip img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .accesorios .grip .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .footer-acc .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-palos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .palos {
+    width: 10rem;
+    height: 500px;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(1.1fr)/repeat(2.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "palonegro paloblanco";
+  }
+  .palos .palonegro img {
+    width: 10rem;
+    margin-left: 150%;
+  }
+  .palos .palonegro .texto-main {
+    font-size: 20px;
+    margin-left: 180%;
+  }
+  .palos .paloblanco img {
+    width: 10rem;
+    margin-left: 170%;
+  }
+  .palos .paloblanco .texto-main {
+    font-size: 20px;
+    margin-left: 210%;
+  }
+  .text-bolsos {
+    font-size: 20px;
+    text-align: center;
+  }
+  .bolsos {
+    width: 10rem;
+    height: 500px;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(1.1fr)/repeat(2.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "bolsoadidas bolsosimbra";
+  }
+  .bolsos .bolsoadidas img {
+    width: 10rem;
+    margin-left: 150%;
+  }
+  .bolsos .bolsoadidas .texto-main {
+    font-size: 20px;
+    margin-left: 180%;
+  }
+  .bolsos .bolsosimbra img {
+    width: 10rem;
+    margin-left: 170%;
+  }
+  .bolsos .bolsosimbra .texto-main {
+    font-size: 20px;
+    margin-left: 210%;
+  }
+  .footer-palo .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-indu {
+    font-size: 20px;
+    text-align: center;
+  }
+  .indu {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "pollera" "remera";
+  }
+  .indu .pollera img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .indu .pollera .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .indu .remera img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .indu .remera .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .text-equipo {
+    font-size: 20px;
+    text-align: center;
+  }
+  .equipo {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(2.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "camiseta2023" "camiseta2014";
+  }
+  .equipo .camiseta2023 img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .equipo .camiseta2023 .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .equipo .camiseta2014 img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .equipo .camiseta2014 .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .footer-ind .footer-edit {
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-sale {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sale {
+    width: 10rem;
+    height: auto;
+    gap: 20px;
+    display: grid;
+    grid-template: repeat(6.1fr)/repeat(1.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "campera" "termica" "calza" "botines" "canillerasimbra" "medias";
+  }
+  .sale .campera img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .campera .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .termica img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .termica .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .calza img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .calza .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .botines img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .botines .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .canillerasimbra img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .canillerasimbra .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+  .sale .medias img {
+    width: 10rem;
+    margin-left: 65%;
+  }
+  .sale .medias .texto-main {
+    font-size: 16px;
+    margin-left: 95%;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    width: 100%;
+    height: 100%;
+  }
+  .cuotas {
+    font-size: 20px;
+  }
+  .mainind {
+    width: 100%;
+  }
+  .mainind .text-h1 {
+    font-size: 30px;
+  }
+  .tarjeta {
+    display: grid;
+    grid-template: repeat(1.1fr)/repeat(3.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "vlack simbra brabo";
+  }
+  .tarjeta .vlack {
+    text-align: center;
+  }
+  .tarjeta .vlack img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .vlack .texto-main {
+    font-size: 20px;
+  }
+  .tarjeta .simbra {
+    text-align: center;
+  }
+  .tarjeta .simbra img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .simbra .texto-main {
+    font-size: 20px;
+  }
+  .tarjeta .brabo {
+    text-align: center;
+  }
+  .tarjeta .brabo img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .brabo .texto-main {
+    font-size: 20px;
+  }
+  .footer-edit {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    width: 100%;
+    height: 100%;
+  }
+  .cuotas {
+    font-size: 20px;
+  }
+  .mainind {
+    width: 100%;
+  }
+  .mainind .text-h1 {
+    font-size: 30px;
+  }
+  .tarjeta {
+    display: grid;
+    grid-template: repeat(1.1fr)/repeat(3.1fr);
+    align-items: center;
+    justify-content: none;
+    grid-template-areas: "vlack simbra brabo";
+  }
+  .tarjeta .vlack {
+    text-align: center;
+  }
+  .tarjeta .vlack img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .vlack .texto-main {
+    font-size: 20px;
+  }
+  .tarjeta .simbra {
+    text-align: center;
+  }
+  .tarjeta .simbra img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .simbra .texto-main {
+    font-size: 20px;
+  }
+  .tarjeta .brabo {
+    text-align: center;
+  }
+  .tarjeta .brabo img {
+    width: 15rem;
+    align-items: center;
+  }
+  .tarjeta .brabo .texto-main {
+    font-size: 20px;
+  }
+  .footer-edit {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+  }
+}
+.footer-edit {
+  background-color: #FDF7FF;
+  display: grid;
+  grid-template: repeat(1.1fr)/repeat(2.1fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "item1 item2 item3";
+}
+
+.boton {
+  background-color: rgba(0, 0, 0, 0.354);
+  border-radius: 3px;
+}
+
+.boton:hover {
+  background-color: rgba(15, 191, 15, 0.398);
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

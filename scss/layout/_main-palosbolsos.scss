@@ -1,0 +1,84 @@
+.text-palos{
+    text-align: center;
+}
+.text-palos::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.text-palos:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.text-palos::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(323, 90%, 65%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+.text-palos{
+    position: relative;
+    font-size: 2rem;
+}
+
+.palos{
+    @include grid(repeat(1.1fr)/repeat(2.1fr),center, space-around);
+    grid-template-areas:
+    "palonegro paloblanco"
+    ;
+    .texto-main{
+        text-align: center;
+        font-size: 20px;
+    }
+    img{
+        border-radius: 20px;
+        padding: 10px;
+    }
+    margin: 30px;
+}
+
+.text-bolsos{
+    text-align: center;
+}
+
+.text-bolsos::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.text-bolsos:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.text-bolsos::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(83, 90%, 65%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+.text-bolsos{
+    position: relative;
+    font-size: 2rem;
+}
+
+.bolsos{
+    @include grid(repeat(1.1fr)/repeat(2.1fr),center, space-around);
+    grid-template-areas:
+    "bolsoadidas bolsosimbra"
+    ;
+    .texto-main{
+        text-align: center;
+        font-size: 20px;
+    }
+    img{
+        border-radius: 20px;
+        padding: 10px;
+    }
+    margin: 30px;
+}
