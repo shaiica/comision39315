@@ -1,7 +1,13 @@
 @media(min-width:1440px){
-    .header{
+//index
+    .indexheader{
         width: 100%;
-        height: 100%;
+        nav ul li a{
+            font-size: 35px;
+        }
+        .logo{
+            width: 10%;
+        }
     }
     .cuotas{
         font-size: 20px;
@@ -55,5 +61,322 @@
         height: 100%;
         font-size: 20px;
     }
-
+//accesorios
+div{
+    .opciones{
+        font-size: 20px;
+        text-align: center;
+        @include gap(20px);
+        @include flex(none,center,column);
+        width: 100%;
+        height: 100%;
+    }
+}
+.top{
+    width: 100%;
+    font-size: 20px;
+    .carri{
+        display: none;
+    }
+}
+.text-acc{
+    font-size: 30px;
+    text-align: center;
+}
+.accesorios{
+    width: 10rem;
+    height: 1000px;
+    @include gap(20px);
+    @include grid(repeat(2.1fr)/repeat(2.1fr),center,none);
+    grid-template-areas:
+    "gaunte mascara"
+    "gryphon grip"
+    ;
+    .guante{
+        img{
+            width: 15rem;
+            margin-left: 210%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 250%;
+        }
+    }
+    .mascara{
+        img{
+            width: 15rem;
+            margin-left: 290%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 330%;
+        }
+    }
+    .gryphon{
+        img{
+            width: 15rem;
+            margin-left: 210%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 250%;
+        }
+    }
+    .grip{
+        img{
+            width: 15rem;
+            margin-left: 290%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 330%;
+        }
+    }
+}
+.footer-acc{
+    .footer-edit{
+        width: 100%;
+        height: 5rem;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+//palos bolsos
+    .text-palos{
+        font-size: 30px;
+        text-align: center
+    }
+    .top{
+        font-size: 25px;
+    }
+    
+    .palos{
+    width: 10rem;
+    height: 500px;
+    @include gap(20px);
+    @include grid(repeat(1.1fr)/repeat(2.1fr),center,none);
+    grid-template-areas:
+    "palonegro paloblanco"
+    ;
+    .palonegro{
+        img{
+            width: 15rem;
+            margin-left: 210%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 250%;
+        }
+    }
+    .paloblanco{
+        img{
+            width: 15rem;
+            margin-left: 290%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 330%;
+        }
+    }
+}
+.text-bolsos{
+    font-size: 30px;
+    text-align: center
+}
+.bolsos{
+    width: 10rem;
+    height: 500px;
+    @include gap(20px);
+    @include grid(repeat(1.1fr)/repeat(2.1fr),center,none);
+    grid-template-areas:
+    "bolsoadidas bolsosimbra"
+    ;
+    .bolsoadidas{
+        img{
+            width: 15rem;
+            margin-left: 210%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 250%;
+        }
+    }
+    .bolsosimbra{
+        img{
+            width: 15rem;
+            margin-left: 290%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 330%;
+        }
+    }
+}
+.footer-palo{
+    .footer-edit{
+        width: 100%;
+        height: 5rem;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+// indumentaria
+        .text-indu{
+            font-size: 30px;
+            text-align: center;
+        }
+        .indu{
+            width: 10rem;
+            height: 500px;
+            @include gap(20px);
+            @include grid(repeat(1.1fr)/repeat(2.1fr),center,none);
+            grid-template-areas:
+            "pollera remera"
+            ;
+            .pollera{
+                img{
+                    width: 15rem;
+                    margin-left: 210%;
+                }
+                .texto-main{
+                    font-size: 20px;
+                    margin-left: 250%;
+                }
+            }
+            .remera{
+                img{
+                    width: 15rem;
+                    margin-left: 290%;
+                }
+                .texto-main{
+                    font-size: 20px;
+                    margin-left: 330%;
+                }
+            }
+        }
+        .text-equipo{
+            font-size: 30px;
+            text-align: center;
+        }
+        .equipo{
+            width: 10rem;
+            height: 500px;
+            @include gap(20px);
+            @include grid(repeat(1.1fr)/repeat(2.1fr),center,none);
+            grid-template-areas:
+            "camiseta2023 camiseta2014"
+            ;
+            .camiseta2023{
+                img{
+                    width: 15rem;
+                    margin-left: 210%;
+                }
+                .texto-main{
+                    font-size: 20px;
+                    margin-left: 250%;
+                }
+            }
+            .camiseta2014{
+                img{
+                    width: 15rem;
+                    margin-left: 290%;
+                }
+                .texto-main{
+                    font-size: 20px;
+                    margin-left: 330%;
+                }
+            }
+        }
+    .footer-ind{
+        .footer-edit{
+            width: 100%;
+            height: 5rem;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+// sale
+.text-sale{
+    font-size: 20px;
+    text-align: center;
+}
+.sale{
+    width: 10rem;
+    height: 1000px;
+    @include gap(20px);
+    @include grid(repeat(5.1fr)/repeat(2.1fr),center,none);
+    grid-template-areas:
+    "campera termica"
+    "calza botines"
+    "canillerasimbra medias"
+    ;
+    .campera{
+        img{
+            width: 15rem;
+            margin-left: 155%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 190%;
+        }
+    }
+    .termica{
+        img{
+            width: 15rem;
+            margin-left: 190%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 230%;
+        }
+    }
+    .calza{
+        img{
+            width: 15rem;
+            margin-left: 155%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 190%;
+        }
+    }
+    .botines{
+        img{
+            width: 15rem;
+            margin-left: 190%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 230%;
+        }
+    }
+    .canillerasimbra{
+        img{
+            width: 15rem;
+            margin-left: 155%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 190%;
+        }
+    }
+    .medias{
+        img{
+            width: 15rem;
+            margin-left: 190%;
+        }
+        .texto-main{
+            font-size: 20px;
+            margin-left: 230%;
+        }
+    }
+    .footer-sale{
+        .footer-edit{
+            width: 100%;
+            height: 5rem;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
 }

@@ -7,30 +7,68 @@
     text-align: center;
 }
 
-.logo{
-    li{
-        list-style: none;
+.indexheader{
+    padding: 40px;
+    @include flex(center, space-between, none);
+    .logo{
+        @include flex(center, none, none);
     }
-    img{
+    
+    .logo img {
+        width: 100%;
+        margin-right: 5px;
         border-radius: 20px;
-        padding: 5px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 10px;
+        font-size: 20px
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .cart {
+        @include flex(center,none,none);
+    }
+    
+    .cart img {
+        width: 20px;
+        margin-right: 5px;
     }
 }
 
 .top{
-    @include grid(repeat(1.1fr)/repeat(3.1fr),center, space-between);
+    @include grid(repeat(1.1fr)/repeat(5.1fr),center, space-between);
     grid-template-areas:
-    "foto back carri"
+    "foto back acces indumen carri"
     ;
     li{
         list-style: none;
-    
+        text-decoration: none;
     }
     img{
         border-radius: 20px;
         padding: 5px;
     }
     .back li a{
+        text-decoration: none;
+        color: black;
+    }
+    .acces li a{
+        text-decoration: none;
+        color: black;
+    }
+    .indumen li a{
         text-decoration: none;
         color: black;
     }
