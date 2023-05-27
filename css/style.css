@@ -9,7 +9,7 @@
 }
 
 .cuotas {
-  background-color: rgb(134, 192, 243);
+  background-color: #79E0EE;
   text-align: center;
 }
 
@@ -2453,7 +2453,7 @@ div .opciones {
   }
 }
 .footer-edit {
-  background-color: #FDF7FF;
+  background-color: #E3F4F4;
   display: grid;
   grid-template: repeat(1.1fr)/repeat(2.1fr);
   align-items: center;
